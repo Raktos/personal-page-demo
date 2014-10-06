@@ -16,7 +16,8 @@ header {
     color: #FFF;
 }
 
-header a:link, header a:visited {
+header a:link, header a:visited,
+footer a:link, footer a:visited {
     color: #CCC;
     text-decoration: none;
     padding-top: 0.5em;
@@ -25,8 +26,32 @@ header a:link, header a:visited {
     padding-right: 1em;
 }
 
-header a:hover, header a:focus {
+header a:hover, header a:focus,
+footer a:hover, footer a:focus {
     text-decoration: underline;
     color: #FFF;
     background-color: #CC0000;
+}
+
+#about img {
+    max-height: 400px;
+    float: left;
+    margin-right: 1em;
+}
+
+#education {
+    clear: both;
+}
+
+#about, #projects {
+    background-color: #D79207;
+}
+
+#education, #contact {
+    background-color: #A45D05;
+}
+
+footer {
+    background-color: #3F2105;
+    color: #FFF;
 }
