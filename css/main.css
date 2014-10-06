@@ -25,6 +25,7 @@ footer a:link, footer a:visited {
     padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
+    transition: all 0.3s;
 }
 
 header a:hover, header a:focus,
@@ -34,15 +35,37 @@ footer a:hover, footer a:focus {
     background-color: #CC0000;
 }
 
-#about img {
-    max-height: 400px;
-    float: left;
-    margin-right: 1em;
-    opacity: 1;
+#about img{
+    max-height:400px;
+    float:left;
+    margin-right:1em;
+    opacity:1;
+    /*transition*/
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    transition:all 0.5s;
+}
+#about img:hover{
+    /*transform*/
+    -webkit-transform:scale(1.1, 1.1);
+    -moz-transform:scale(1.1, 1.1);
+    -ms-transform:scale(1.1, 1.1);
+    -o-transform:scale(1.1, 1.1);
+    transform:scale(1.1, 1.1);
+    /*box-shadow*/
+    -webkit-box-shadow:7px 7px 4px rgba(0,0,0,0.5);
+    -moz-box-shadow:7px 7px 4px rgba(0,0,0,0.5);
+    box-shadow:7px 7px 4px rgba(0,0,0,0.5);
 }
 
-#about img:hover {
-    opacity: 0.7;
+#about .imgWrap {
+    transition:transform 3s;
+}
+
+#about .imgWrap:hover {
+    transform-origin: 175px, 175px;
+    transform: rotate(720deg);
 }
 
 #education {
